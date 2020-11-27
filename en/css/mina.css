@@ -1,0 +1,141 @@
+/********************************************************
+                   Specific styles
+********************************************************/
+.img-section{
+    background-color: transparent;
+    background-image: url("../img/mina/prepravljena2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    _height: 100vh;
+
+}
+
+.img-skole{
+    background-color: transparent;
+    background-image: url("../img/mina/f-hole-prepravljena.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    _height: 100vh;
+}
+
+.bio {
+    text-align: left;
+    line-height: 1.4;
+    letter-spacing: 3px;
+    padding: 5px;
+    font-size: 21px;
+}
+.skole-style{
+    text-align: left;
+    line-height: 1.4;
+    letter-spacing: 1px;
+    font-size: 16px;
+    color: black;
+
+}
+
+.bio-headline{
+    text-align: center;
+    font-size: 23px;
+    padding-top: 40px;
+    margin-bottom: 60px;
+    color: #333333;
+    position: relative;
+}
+
+.skole-headline{
+    text-align: center;
+    font-size: 25px;
+    color: #d9a300;
+    padding-top: 20px;
+    margin-bottom: 70px;
+    font-weight:bold;
+}
+
+.link-style a{
+    font-size: 20px;
+    color: #d9a300;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    width: 140px;
+    margin: 40px auto 0;
+    text-decoration: none;
+    border: 1px solid #d9a300;
+    border-radius: 5px;
+    padding: 5px;
+
+
+
+
+}
+
+.link-style:hover{
+    color: #333333;
+    text-decoration: none;
+    font-weight:bold;
+}
+/***********************************************************
+                      Helper classes
+***********************************************************/
+@media (max-width: 768px){
+
+    .bio{
+        font-size: 16px;
+        letter-spacing: 0px;
+        padding: 0;
+        color: black;
+    }
+
+    .bio-headline{
+       padding-top: 30px;
+        font-size: 40px;
+    }
+}
+
+@media (min-width: 768px){
+
+    .bio{
+        font-size: 19px;
+        letter-spacing: 0px;
+        padding: 0;
+        color: black;
+    }
+
+    .bio-headline{
+        padding-top: 30px;
+        font-size: 40px;
+    }
+    .skole-style{
+        font-size: 20px;
+    }
+
+}
+
+@media (min-width: 870px){
+
+}
+
+@media (min-width: 970px){
+
+}
+
+@media (min-width: 1200px){
+
+    .bio{
+        font-size: 20px;
+    }
+
+    .link-style a{
+        margin-top: 70px;
+    }
+
+    .skole-style {
+        line-height: 1.4;
+        letter-spacing: 1px;
+        font-size:20px;
+    }
+
+}

@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin-ext');
+/**************************************************************
+                       Global Styles
+**************************************************************/
+
+body {
+    font-family: "PT Sans", sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+    color: #333333;
+    background-color: transparent;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+h1.bio-headline:after  {
+    content: " ";
+    width: 120px;
+    position: absolute;
+    bottom: -5%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    border-bottom: 1px solid #d9a300;
+}
+small {
+    font-size: 15px;
+}
+a:focus {
+    outline: none;
+}
+.main-header {
+    position: relative;
+}
+/**************************************************************
+                        Layout
+**************************************************************/
+
+/**************************************************************
+                      Specific Styles
+**************************************************************/
+
+/* Navigacija */
+.navbar.navbar-default{
+    background-color: transparent;
+    border-color: transparent;
+}
+.navbar-default .navbar-nav>li>a{
+    font-size: 22px;
+    color: #333333;
+    padding-bottom: 3px;
+}
+.navbar-default .navbar-nav>li>a:hover {
+    border-bottom: 1px solid #d9a300;
+}
+.navbar-nav {
+    float: none;
+    display: inline-block;
+}
+.nav>li {
+    margin-bottom: 20px;
+}
+.nav>li>a {
+    display: inline !important;
+}
+.navbar .navbar-collapse {
+    text-align: center;
+}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border: none;
+    box-shadow: none;
+}
+.navbar-default .navbar-toggle {
+    background-color: transparent;
+    border-color: transparent;
+}
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: transparent;
+    border-color: transparent;
+}
+.navbar-toggle .icon-bar {
+    width: 35px;
+
+}
+.navbar-default .navbar-toggle .icon-bar{
+    background-color: #333333;
+}
+.welcome {
+    font-size: 40px;
+    color: #d9a300;
+   font-style: italic;
+}
+
+/* POČETNA */
+
+.home-start {
+    background-color: transparent;
+    background-image: url("../img/katarinak/background-home.jpg");
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    width: 100%;
+    background-position: top center;
+    background-size: cover;
+}
+.home-start .navbar-nav>li>a {
+    color: white;
+}
+.home-start .navbar-nav>li>a:hover {
+    color: #d9a300;
+    border-bottom: 1px solid #d9a300;
+}
+.home-start p {
+    color: white;
+    font-size: 22px;
+}
+.home-start .container {
+    position: relative;
+}
+.home-start h1 {
+    color: white;
+    font-size: 60px;
+    font-weight: 300;
+    position: absolute;
+    top: 200px;
+    right: 20px;
+}
+.home-start h1:after {
+    content: " ";
+    width: 70%;
+    position: absolute;
+    bottom: -3px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-bottom: 1px solid #d9a300;
+}
+.home-start p {
+    position: absolute;
+    top: 300px;
+    right: 70px;
+    margin-left: 10px;
+    font-size: 15px;
+    font-style: italic;
+    -webkit-animation: opacity 3s ease-in-out forwards;
+    animation: opacity 3s ease-in-out forwards;
+}
+
+@-webkit-keyframes opacity {
+    0% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes opacity {
+    0% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+/* FOOTER */
+.home-start .main-footer {
+    display: none;
+}
+.main-footer {
+    margin-top: 60px;
+    padding: 30px 0 50px 0;
+}
+.main-footer .container {
+    border-top: 1px solid #d9a300;
+    padding-top: 20px;
+}
+.main-footer p {
+    font-size: 15px;
+    padding-top: 10px;
+}
+.main-footer p a {
+    text-decoration: none;
+    color: #a06f00;
+}
+.main-footer p a:hover {
+    color: #d9a300;
+}
+/* Prevod */
+
+.lang {
+    float: left;
+    position: absolute;
+    top: 18px;
+    z-index: 1000;
+}
+.lang li {
+    float: right;
+    list-style: none;
+    margin-right: 10px;
+}
+
+.lang li a{
+    color: #d9a300;
+}
+
+/**************************************************************
+                     Helper Styles
+**************************************************************/
+/* Small */
+@media (min-width: 768px) {
+    .navbar-nav {
+        margin-top: 30px;
+    }
+    .lang {
+        top: 32px;
+        left: -26px;
+    }
+}
+
+/* Middle */
+@media (min-width: 991px) {
+    .home-start p {
+        font-size: 20px;
+    }
+    .main-footer p {
+        padding-top: 0;
+    }
+    .main-footer {
+        padding-bottom: 20px;
+    }
+    .lang {
+        left: 35px;
+    }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+    .welcome {
+        font-size: 50px;
+    }
+    .home-start p {
+        font-size: 30px;
+        margin-top: 150px;
+        margin-left: 200px;
+    }
+    .main-footer p {
+        float: right;
+        padding-top: 0;
+    }
+    .lang {
+        left: 120px;
+        font-size: 18px;
+    }
+}
+@media (min-width: 1500px) {
+    .lang {
+        left: 200px;
+    }
+}
